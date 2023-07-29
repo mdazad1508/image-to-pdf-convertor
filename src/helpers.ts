@@ -65,7 +65,7 @@ export const fileToImageURL = (file: File): Promise<CustomImage> => {
 export const generatePdfFromImages = (images: CustomImage[]) => {
   const doc = new jsPDF();
   doc.deletePage(1);
-  
+  alert("generating pdf....please wait ")
   images.forEach((image) => {
     const imageDimensions = imageDimensionsOnA4({
       width: image.width,
@@ -82,7 +82,7 @@ export const generatePdfFromImages = (images: CustomImage[]) => {
       imageDimensions.height
     );
   });
-
+  
   const pdfURL = doc.output("bloburl");
   window.open(pdfURL as any, "_blank");
 };

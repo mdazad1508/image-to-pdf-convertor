@@ -11,8 +11,7 @@
     "web app"
   ],
   "author": {
-    "name": "Jakub Kozak",
-    "url": "https://medium.com/@kozak.jakub55"
+    "name": "Md azad"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
