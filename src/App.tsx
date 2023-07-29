@@ -38,7 +38,7 @@ function App(){
       <div className="images-container">
         {uploadedImages.length > 0 ? (
           uploadedImages.map((image) => (
-            <img key={image.src} src={image.src} className="uploaded-image" />
+            <img key={image.src} alt="123" src={image.src} className="uploaded-image" />
           ))
         ) : (
           <p>Upload some images...</p>
